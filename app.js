@@ -15,7 +15,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://drab-cyan-scorpion-kit.cyclic.app/",
+        origin: "https://git-midterm-client.vercel.app",
         methods: ["GET", "POST"]
     }
 });
