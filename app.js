@@ -7,7 +7,7 @@ const cors = require('cors');
 const { Server } = require('socket.io');
 app.use(cors());
 
-const PORT = 5000;
+const PORT = 3001;
 
 const axios = require('axios');
 
@@ -15,7 +15,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: "https://git-midterm-client.vercel.app",
+        origin: "https://drab-cyan-scorpion-kit.cyclic.app/",
         methods: ["GET", "POST"]
     }
 });
